@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<title>Rock,Paper,Scissors</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/game.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/font2.css">
+    
+<!-- add style section -->
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<!--close style section -->
+
+<!--head section-->
+<head>
+    <!-- import javascript to html-->
+    <script src="script/game.js"></script>
+</head>
+<!--close head session-->
+    
+    
+<!--body session-->
+<body>
+
+         <!--- links (sit on top)-->
+          <div class="w3-top">
+                  <div class="w3-row w3-large">
+                  <div class="w3-col s3">
+                          <a href="index.html" class="w3-button w3-block">Home</a>
+          </div>
+                  <div class="w3-col s3">
+                            <a href="project.html" class="w3-button w3-block">Project</a>
+          </div>
+                    <div class="w3-col s3">
+                            <a href="#" class="w3-button w3-block">Rock,Paper,Scissors</a>
+          </div>
+                    <div class="w3-col s3">
+                            <a href="contact.html" class="w3-button w3-block">Contact</a>
+        </div>
+        </div>
+        </div>
+        <!-- close links-->
+      
+    <div class="main">
+        <div class="container">
+            <!--content-->
+            <section class="content">
+              <button class="play rock" type="button" onclick="play('rock')"></button>
+              <button class="play paper" type="button" onclick="play('paper')"></button>
+              <button class="play scissors" type="button" onclick="play('scissors')"></button>
+              <div style="clear:both;"></div>
+              <p><span id="player"></span> <span id="opponent"></span></p>
+              <h2 id="results"></h2>
+            </section>
+            <!--close content-->
+    
+        <!-- score-->        
+        <aside class="aside">
+            <div class="scorebox">
+				<h2>Score</h2>
+				<div class="score-num"><span id="wins">0</span> <br />wins</div>
+				<div class="score-divider"><span>-</span></div>
+				<div class="score-num"><span id="loses">0</span> <br />loses</div>
+            </div>
+            
+            <button type="reset" id="reset" onclick="reset()">reset scores</button>
+        </aside>
+        <!--close score-->
+        
+        </div>
+        <!--close container-->
+    
+    </div>
+    <!--close main-->
+    
+    </body>
+    <!--close body-->
+
+</html>
+
+    
